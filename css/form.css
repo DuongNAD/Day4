@@ -1,0 +1,161 @@
+body {
+    padding: 5% 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.content {
+    padding: 4% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #e0d3ff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(160, 120, 250, 0.2);
+}
+
+.form-left,
+.form-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    align-items: center;
+}
+
+.form-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    animation: reveal 1.2s ease-in-out forwards;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        clip-path: circle(0% at 50% 50%);
+    }
+
+    100% {
+        opacity: 1;
+        clip-path: circle(150% at 50% 50%);
+    }
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #333333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: rgba(102, 112, 133, 1);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: 6%;    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.first-name,
+.last-name {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 200px;
+}
+#first-name,
+#last-name,
+#email,
+#phone,
+#messager{
+    height: 28px;
+    padding-left: 4%;
+    border: 1px solid#CCCCCC ;
+    border-radius: 4px;
+}
+#phone{
+    padding-top: 4px;
+}
+.email,
+.messager,
+.phone-number{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+#messager{
+    max-height: 200px;
+    max-width: 450px;
+    height: 200px;
+    width: 450px;
+    padding-top: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.check-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+#submit{
+    background-color: rgb(127,86,217);
+    border: 2px solid rgb(127,86,217);
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+#checkbox{
+    margin-top: 6px;
+}
+#submit:hover{
+    background-color: white;
+    color: rgb(127,86,217);
+}
+.check-box {
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    color: #333;
+  }
+  
+  .check-box:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .check-box input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+ .check-box a {
+    color: #515151;
+    text-decoration: underline;
+    text-decoration-color: #515151;
+  }
+@media (max-width: 1025px) {
+
+}
